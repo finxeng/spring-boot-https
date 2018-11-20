@@ -1,11 +1,11 @@
 server:
-  port: 8443
-  ssl:
-    key-store: classpath:server.keystore
-    key-store-password: 900415
-    key-store-type: JKS
-    key-alias: shareit
+  port: 9090
 
 spring:
   application:
-    name: spring-boot-https
+    name: spring-boot-aws-sqs
+
+
+tradepay:
+  test-queue:
+    url: https://sqs.ap-south-1.amazonaws.com/848318613114/test-queue-dev
